@@ -49,7 +49,7 @@ public class OrdersAndItems {
         System.out.printf("Rami's order is %s\n", order1.ready == true ? "ready." : "not ready");
 
         
-        System.out.println("");
+        System.out.println("---------------------");
         order4.items.add(item2);
         order4.items.add(item2);
         order4.findTotal();

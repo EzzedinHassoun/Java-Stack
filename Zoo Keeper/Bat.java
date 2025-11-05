@@ -5,7 +5,7 @@ public class Bat extends Mammals {
     }
     
     public void fly(){
-        super.setEnergylevel(super.getEnergylevel()-50);
+        setEnergylevel(getEnergylevel()-50);
                 System.out.println("The bat is now airborne");
     }
     public void eatHumans(){

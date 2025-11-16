@@ -11,14 +11,13 @@ import com.codingdojo.demo.models.Burger;
 import com.codingdojo.demo.services.BurgerService;
 
 import jakarta.validation.Valid;
-
 @Controller
+
 public class BurgerControllers {
 
     private final BurgerService burgerService;
 
-    public BurgerControllers(BurgerService burgerService) {
-        this.burgerService = burgerService;
+    public BurgerControllers(BurgerService burgerService) {this.burgerService = burgerService;
     }
 
     @GetMapping("/burger/new")

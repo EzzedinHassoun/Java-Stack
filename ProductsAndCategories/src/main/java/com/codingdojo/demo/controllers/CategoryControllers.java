@@ -47,7 +47,7 @@ public class CategoryControllers {
 	@PostMapping("/categories/new")
 	public String newCategory(@Valid @ModelAttribute("category") Category category, BindingResult result, Model model) {
 		if(result.hasErrors()) {
-			return "rediredt:/categories/new";
+			return "newCategory.jsp";
 		}else {
 			categoryService.addCategory(category);
 			return "redirect:/";
